@@ -89,7 +89,7 @@ jobs:
 
     steps:
       - name: Deploy to staging
-        uses: appleboy/ssh-action@v2.0.0
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
@@ -111,7 +111,7 @@ jobs:
 
     steps:
       - name: Deploy to production
-        uses: appleboy/ssh-action@v2.0.0
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
